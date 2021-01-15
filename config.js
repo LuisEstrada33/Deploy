@@ -1,7 +1,7 @@
 module.exports = {
 
     port: process.env.Port || 3000,
-    db: process.env.MONGODB || 'mongodb://localhost:27017/test',
+    db: process.env.MONGODB || 'mongodb+srv://Admin:luis@cluster0.icyrg.mongodb.net/test?retryWrites=true&w=majority',
 
     urlParser : {
 
