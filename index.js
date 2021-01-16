@@ -9,13 +9,13 @@ const Product = require('./models/product')
 const bodyParser = require('body-parser')
 const app = express()
 
-var port =  process.env.Port || 3000;
+var port =  process.env.Port || 3000
 
 
 
 // $ npm i -S method-override
-const methodOverride = require('method-override')
-app.use(methodOverride('_method'))
+//const methodOverride = require('method-override')
+//app.use(methodOverride('_method'))
 
 
 
