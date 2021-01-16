@@ -9,7 +9,7 @@ const Product = require('./models/product')
 const bodyParser = require('body-parser')
 const app = express()
 
-
+var port =  process.env.Port || 3000;
 
 
 
@@ -115,8 +115,8 @@ mongoose.connect(config.db, config.urlParser, (err,res) =>{
     }
     console.log('Conexion a la BD exitosa')
 
-    app.listen(config.port,() => {
-    console.log(`API-REST  yeiii ejecutando en http://locahost:${config.port}`)
+    app.listen(port,() => {
+    console.log(`API-REST  yeiii ejecutando en http://locahost:${port}`)
     })
 })
 /*
